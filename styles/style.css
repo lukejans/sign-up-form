@@ -6,7 +6,7 @@
 }
 /* setup */
 :root {
-  --yellow: rgb(255, 185, 38);
+  --yellow: rgb(255, 190, 40);
   --orange: rgb(200, 100, 60);
   --bg: rgb(24, 22, 22);
   --bgf: rgb(19, 11, 12);
@@ -14,12 +14,17 @@
   --t-title: 'Atomic Age';
   --t-bar: 'Libre Barcode 39 Text';
   --t-main: 'Fira Code';
+  --white: rgb(246, 244, 238);
+  --grey: rgb(152, 152, 140);
+  --light-blue: rgb(177, 205, 212);
+
+  --glow-light-blue: rgb(132, 187, 188);
 }
 
 body {
   background-color: var(--bg);
+  color: var(--white);
 }
-
 .wrapper {
   display: flex;
   justify-content: center;
@@ -29,7 +34,33 @@ body {
 main {
   width: 1000px;
   height: 800px;
+  background-color: var(--bgf);
+  display: flex;
+  border-radius: 1rem;
+}
+.display-side {
+  position: relative;
 }
 .big-img {
-  max-width: 200px;
+  max-height: 800px;
+  border-radius: 1rem 0 0 1rem;
+}
+/* typography */
+.title {
+  position: absolute;
+  top: 180px;
+  left: 30px;
+}
+.main-title {
+  font-family: var(--t-title), sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--light-blue);
+}
+.sub-title {
+  max-width: 300px;
+  font-family: var(--t-main);
+  color: var(--grey);
+  font-size: 0.75rem;
+  line-height: 2;
 }
