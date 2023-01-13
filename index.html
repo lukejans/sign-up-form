@@ -13,7 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Fira+Code:wght@500&family=Libre+Barcode+39+Text&display=swap"
       rel="stylesheet" />
     <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="#" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png" />
     <!-- scripts -->
     <script defer src="./js/script.js"></script>
     <!-- title -->
@@ -22,8 +26,57 @@
   <body>
     <div class="wrapper">
       <main>
-        <section></section>
-        <section></section>
+        <section>
+          <picture>
+            <img
+              src="./images/static-creature-big.png"
+              alt="game cover"
+              draggable="false" />
+          </picture>
+          <div class="title">
+            <p class="main-title">DECEPTION</p>
+            <p class="sub-title">
+              Welcome to a world of deception, where survival is the ultimate
+              illusion.
+            </p>
+          </div>
+        </section>
+        <section>
+          <p>some text explaining this form is fake</p>
+          <form action="#">
+            <h1>form title</h1>
+            <p>
+              Required fields are followed by
+              <strong><span aria-label="required">*</span></strong
+              >.
+            </p>
+            <section>
+              <h2>Contact information</h2>
+              <p>
+                <label for="name">
+                  <span>Name: </span>
+                  <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="username"
+                  aria-describedby="name-validation" />
+                <br />
+                <span id="name-validation" class="validation-message"
+                  >Please use at least eight characters.</span
+                >
+              </p>
+              <p>
+                <label for="pwd">
+                  <span>Password: </span>
+                  <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="password" id="pwd" name="password" />
+              </p>
+            </section>
+          </form>
+        </section>
       </main>
     </div>
   </body>
