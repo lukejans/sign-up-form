@@ -5,32 +5,75 @@
   box-sizing: border-box;
 }
 /* setup */
+@font-face {
+  font-family: 'mad_hackerregular';
+  src: url('madhacker-yjz8-webfont.eot');
+  src: url('madhacker-yjz8-webfont.eot?#iefix') format('embedded-opentype'),
+    url('madhacker-yjz8-webfont.woff') format('woff'),
+    url('madhacker-yjz8-webfont.ttf') format('truetype'),
+    url('madhacker-yjz8-webfont.svg#mad_hackerregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mad_hackerregular';
+  src: url('madhacker-yyqv-webfont.eot');
+  src: url('madhacker-yyqv-webfont.eot?#iefix') format('embedded-opentype'),
+    url('madhacker-yyqv-webfont.woff') format('woff'),
+    url('madhacker-yyqv-webfont.ttf') format('truetype'),
+    url('madhacker-yyqv-webfont.svg#mad_hackerregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mad_hackeritalic';
+  src: url('madhackeritalic-8eoz-webfont.eot');
+  src: url('madhackeritalic-8eoz-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('madhackeritalic-8eoz-webfont.woff') format('woff'),
+    url('madhackeritalic-8eoz-webfont.ttf') format('truetype'),
+    url('madhackeritalic-8eoz-webfont.svg#mad_hackeritalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mad_hackeritalic';
+  src: url('madhackeritalic-rpg9-webfont.eot');
+  src: url('madhackeritalic-rpg9-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('madhackeritalic-rpg9-webfont.woff') format('woff'),
+    url('madhackeritalic-rpg9-webfont.ttf') format('truetype'),
+    url('madhackeritalic-rpg9-webfont.svg#mad_hackeritalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --yellow: rgb(255, 190, 40);
   --orange: rgb(200, 100, 60);
   --bg: rgb(24, 22, 22);
   --bgf: rgb(19, 11, 12);
 
-  --t-title: 'Atomic Age';
+  --t-title: 'Deception G';
   --t-bar: 'Libre Barcode 39 Text';
   --t-main: 'Fira Code';
   --white: rgb(246, 244, 238);
   --grey: rgb(152, 152, 140);
-  --light-blue: rgb(177, 205, 212);
+  --light-blue: rgb(188, 208, 213);
 
   --glow-light-blue: rgb(132, 187, 188);
 }
-
 body {
   background-color: var(--bg);
   color: var(--white);
 }
+/* center */
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
+/* layout */
 main {
   width: 1000px;
   height: 800px;
@@ -45,17 +88,34 @@ main {
   max-height: 800px;
   border-radius: 1rem 0 0 1rem;
 }
+.form-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  font-family: var(--t-main);
+  background-color: var(--bg);
+  width: 450px;
+  height: 500px;
+  padding: 25px;
+}
+
 /* typography */
 .title {
   position: absolute;
-  top: 180px;
-  left: 30px;
+  width: 250px;
+  height: 175px;
+  top: 110px;
+  padding: 30px 0 0 30px;
 }
 .main-title {
   font-family: var(--t-title), sans-serif;
   font-size: 3rem;
   font-weight: bold;
   color: var(--light-blue);
+  text-shadow: 1px 1px 7px var(--glow-light-blue);
 }
 .sub-title {
   max-width: 300px;
