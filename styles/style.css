@@ -46,39 +46,15 @@ body {
 }
 /* layout */
 main {
-  width: 1000px;
-  height: 800px;
+  min-width: 800px;
+  height: 600px;
   background-color: var(--bg-f2);
   display: flex;
   border-radius: 1rem;
-}
-.display-side {
   position: relative;
-}
-.big-img {
-  max-height: 800px;
-  border-radius: 1rem 0 0 1rem;
-}
-.form-side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  border-radius: 0 1rem 1rem 0;
-  background-image: linear-gradient(
-    to bottom right,
-    var(--bg-f2),
-    var(--bg-f1)
-  );
-}
-form {
-  font-family: var(--t-main);
-  background-color: var(--bg);
-  border-radius: 0.5rem;
-  width: 450px;
-  height: 500px;
-  padding: 25px;
+  background-image: url('/images/full-bg.png');
+  background-color: hsl(225, 100%, 94%);
+  background-size: cover;
 }
 
 /* typography */
@@ -86,13 +62,13 @@ form {
   position: absolute;
   width: 275px;
   height: 175px;
-  top: 100px;
+  top: 50px;
   padding: 30px 0 0 30px;
   text-shadow: 1px 1px 50px var(--glow);
 }
 .main-title {
   font-family: var(--t-title), sans-serif;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-weight: 100;
   color: var(--off-white);
   letter-spacing: 15px;
