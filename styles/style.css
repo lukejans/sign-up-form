@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0.5px solid red;
 }
 img {
   display: block;
@@ -16,50 +17,67 @@ img {
   --g-2: rgb(58, 56, 77);
   --g-3: rgb(63, 59, 80);
   --g-4: rgb(72, 58, 75);
-  --g-5: rgb(72, 68, 90);
-  --g-6: rgb(120, 67, 75);
+  --g-5: rgb(120, 67, 75);
   /* font colors */
-  --fc-main: rgb(65, 65, 65);
+  --fc-main: rgb(201, 197, 187);
   --fc-sub: rgb(138, 230, 175);
   --fc-alt: rgb(235, 131, 52);
   /* fonts */
-  --f-main: 'Montserrat Alternates';
+  --f-main: 'Monofett';
   --f-sub: 'Fira Code';
 }
 body {
-  background-color: var(--bg-main);
   color: var(--fc-main);
-  font-family: var(--f-main);
-}
-section {
-  border: 2px solid rgb(255, 0, 0);
-}
-main {
-  background-color: var(--bg-sub);
-  border-radius: 1rem;
-  overflow: hidden;
+  background: linear-gradient(
+    to bottom left,
+    var(--g-1) 0%,
+    var(--g-2) 25%,
+    var(--g-3) 50%,
+    var(--g-4) 75%
+  );
+  font-family: var(--f-sub);
 }
 /* center */
 .wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 /* layout */
 .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-section:first-child {
-  width: 375px;
-}
-section:last-child {
-  width: 375px;
-}
-/* images */
-[alt='bartender'] {
+  position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* images */
+.bartender {
+  width: 300px;
+  transform: scaleX(-1);
 }
 /* typography */
+.form {
+  color: white;
+  background-color: var(--bg-main);
+  border-radius: 1rem 1rem 0 0;
+  min-width: 375px;
+}
+.title-main {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: var(--f-main);
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 var(--bg-main), 0 2px 0 var(--bg-main),
+    0 3px 0 var(--bg-main), 0 4px 0 var(--fc-alt), 0 5px 0 var(--fc-alt),
+    0 6px 0 var(--fc-alt);
+}
+.title-sub {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
