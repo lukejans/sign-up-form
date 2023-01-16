@@ -6,20 +6,21 @@
 }
 /* setup */
 :root {
-  /* colors */
-  --yellow: rgb(255, 190, 40);
-  --orange: rgb(200, 100, 60);
-  --bg: rgb(24, 22, 22);
-  --bg-f1: rgb(20, 20, 20);
-  --bg-f2: rgb(19, 11, 12);
-  --white: rgb(246, 244, 238);
-  --grey: rgb(152, 152, 140);
-  --off-white: rgb(224, 224, 224);
-
+  /* layout colors */
+  --bg-main: rgb(40, 40, 40);
+  --g-1: rgb(49, 49, 70);
+  --g-2: rgb(58, 56, 77);
+  --g-3: rgb(63, 59, 80);
+  --g-4: rgb(72, 58, 75);
+  --g-5: rgb(120, 67, 75);
+  --g-6: rgb(235, 131, 52);
+  /* font colors */
+  --fc-main: rgb(247, 240, 222);
+  --fc-sub: rgb(138, 230, 175);
+  --fc-alt: rgb(235, 131, 52);
   /* fonts */
-  --f-bar: 'Libre Barcode 39 Text';
+  --f-bar: 'Montserrat Alternates';
   --f-main: 'Fira Code';
-  --f-glow: rgb(135, 227, 193);
 }
 body {
   background-color: var(--bg);
