@@ -45,38 +45,5 @@ body {
   min-height: 100vh;
 }
 /* layout */
-main {
-  min-width: 800px;
-  height: 600px;
-  background-color: var(--bg-f2);
-  display: flex;
-  border-radius: 1rem;
-  position: relative;
-  background-image: url('/images/full-bg.png');
-  background-color: hsl(225, 100%, 94%);
-  background-size: cover;
-}
 
 /* typography */
-.title {
-  position: absolute;
-  width: 275px;
-  height: 175px;
-  top: 50px;
-  padding: 30px 0 0 30px;
-  text-shadow: 1px 1px 50px var(--glow);
-}
-.main-title {
-  font-family: var(--t-title), sans-serif;
-  font-size: 2.5rem;
-  font-weight: 100;
-  color: var(--off-white);
-  letter-spacing: 15px;
-}
-.sub-title {
-  max-width: 300px;
-  font-family: var(--t-main);
-  color: var(--grey);
-  font-size: 0.75rem;
-  line-height: 2;
-}
