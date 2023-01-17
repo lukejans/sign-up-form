@@ -35,6 +35,7 @@ body {
     var(--g-4) 100%
   );
   font-family: var(--f-sub), sans-serif;
+  letter-spacing: 2px;
 }
 /* center */
 .wrapper {
@@ -114,6 +115,9 @@ a:hover {
   letter-spacing: 1px;
 }
 /* SUBSCRIPTION SECTION */
+.subs-section {
+  margin-top: 35px;
+}
 /* contains notification containers */
 .subs-ctrls {
   display: flex;
@@ -167,7 +171,7 @@ a:hover {
 .toggle-input:checked ~ .toggle-fill::after {
   transform: translateX(var(--height));
 }
-/* subscription logo */
+/* logos & images */
 svg {
   fill: #dddddd;
   width: 35px;
@@ -176,11 +180,24 @@ svg {
 .toggle-input:checked ~ svg {
   fill: var(--fc-sub);
 }
+.bell {
+  width: 65px;
+  padding: 15px;
+  background-color: var(--bg-main);
+  border: 0.5px solid gray;
+  border-radius: 100%;
+  position: absolute;
+  top: -30px;
+}
 /* notification font */
 .toggle-fill + p,
 .subs {
   font-family: monospace, sans-serif;
   font-size: 1rem;
+}
+.subs {
+  padding-top: 25px;
+  font-weight: bold;
 }
 .toggle-fill + p {
   font-size: 0.75rem;
@@ -194,7 +211,6 @@ svg {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  overflow: hidden;
   border: 0.5px solid rgb(85, 85, 85);
   border-radius: 0.5rem;
 }
@@ -209,7 +225,20 @@ svg {
   opacity: 0.5;
 }
 /* SUBMIT & RESET BUTTONS */
+.btns-container {
+  display: flex;
+  gap: 15px;
+}
 .submit,
 .reset {
   width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: var(--f-sub), monospace, sans-serif;
+  font-weight: bold;
+}
+.submit {
+  background-color: var(--fc-sub);
 }
