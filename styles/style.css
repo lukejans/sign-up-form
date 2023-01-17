@@ -113,24 +113,25 @@ a:hover {
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
-/* NEWS SECTION */
-/* toggle button label
-    - contains news section
-    - controls button layout
-   */
+/* SUBSCRIPTION SECTION */
+/* contains notification containers */
+.subs-ctrls {
+  display: flex;
+  width: 300px;
+}
+/* notification containers */
 .toggle {
   --width: 40px;
   --height: calc(var(--width) / 2);
   --border-radius: calc(var(--height) / 2);
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-around;
   cursor: pointer;
   width: 200px;
-  height: 50px;
+  height: 100px;
 }
-/* the actual checkbox */
+/* original checkbox*/
 .toggle-input {
   opacity: 0;
   position: absolute;
@@ -166,7 +167,7 @@ a:hover {
 .toggle-input:checked ~ .toggle-fill::after {
   transform: translateX(var(--height));
 }
-/* news logo */
+/* subscription logo */
 svg {
   fill: #dddddd;
   width: 35px;
@@ -175,10 +176,15 @@ svg {
 .toggle-input:checked ~ svg {
   fill: var(--fc-sub);
 }
-/* news font */
-.news {
+/* notification font */
+.toggle-fill + p,
+.subs {
   font-family: monospace, sans-serif;
+  font-size: 1rem;
+}
+.toggle-fill + p {
   font-size: 0.75rem;
+  margin: 4px 0 8px 0;
 }
 /* grid background */
 .background {
@@ -201,4 +207,9 @@ svg {
   left: 0;
   background-image: url(../images/batthern.png);
   opacity: 0.5;
+}
+/* SUBMIT & RESET BUTTONS */
+.submit,
+.reset {
+  width: 100%;
 }
