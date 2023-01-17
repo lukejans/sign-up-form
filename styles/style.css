@@ -123,9 +123,11 @@ a:hover {
   width: 40px;
   height: 20px;
 }
+/* the actual checkbox */
 .toggle-input {
   opacity: 0;
 }
+/* toggle button background */
 .toggle-fill {
   position: relative;
   top: -20px;
@@ -139,6 +141,7 @@ a:hover {
 .toggle-input:checked ~ .toggle-fill {
   background: var(--fc-sub);
 }
+/* toggle button circle */
 .toggle-fill::after {
   content: '';
   position: absolute;
@@ -154,11 +157,16 @@ a:hover {
 .toggle-input:checked ~ .toggle-fill::after {
   transform: translateX(var(--height));
 }
+/* news logo */
 svg {
   fill: #dddddd;
   width: 60px;
   padding: 15px;
 }
+.toggle-input:checked ~ svg {
+  fill: var(--fc-sub);
+}
+/* news font */
 .news {
   font-family: monospace, sans-serif;
   font-size: 0.75rem;
