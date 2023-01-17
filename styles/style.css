@@ -112,7 +112,8 @@ a:hover {
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
-/* newsletter controls */
+/* NEWS SECTION */
+/* toggle button */
 .toggle {
   --width: 40px;
   --height: calc(var(--width) / 2);
@@ -123,11 +124,11 @@ a:hover {
   height: 20px;
 }
 .toggle-input {
-  display: none;
+  opacity: 0;
 }
 .toggle-fill {
   position: relative;
-  margin: 10px;
+  top: -20px;
   width: var(--width);
   height: var(--height);
   border-radius: var(--border-radius);
