@@ -73,20 +73,7 @@ input {
   margin-bottom: 20px;
 }
 /* images */
-a {
-  color: var(--fc-sub);
-  background-image: linear-gradient(var(--fc-sub), var(--fc-sub));
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  background-position-x: right;
 
-  transition: background-size 500ms;
-}
-a:hover {
-  background-size: 100% 100%;
-  background-position-x: left;
-  color: var(--bg-main);
-}
 .bartender {
   width: 300px;
   transform: scaleX(-1);
@@ -196,7 +183,7 @@ svg {
   font-size: 1rem;
 }
 .subs {
-  padding-top: 25px;
+  padding: 25px 0 10px 0;
   font-weight: bold;
 }
 .toggle-fill + p {
@@ -236,18 +223,52 @@ svg {
   margin-top: 15px;
   border: none;
   border-radius: 0.4rem;
-  color: var(--bg-main);
-  font-family: var(--f-sub), monospace, sans-serif;
   font-weight: bold;
-}
-.submit {
-  background-color: var(--fc-alt);
-}
-.submit:hover {
-  background-color: var(--fc-sub);
+  font-family: var(--f-sub), monospace, sans-serif;
+  color: var(--bg-main);
   cursor: pointer;
+}
+
+/* fill animation */
+.submit {
+  background-image: linear-gradient(var(--fc-sub), var(--fc-sub));
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+
+  transition: background-size 500ms;
+}
+.reset {
+  background-image: linear-gradient(rgb(227, 85, 85), rgb(227, 85, 85));
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+
+  transition: background-size 500ms;
+}
+
+.submit:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
 }
 .reset:hover {
-  background-color: rgb(248, 61, 61);
-  cursor: pointer;
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+/* FILL HOVER ANIMATION */
+.mention a {
+  color: var(--fc-sub);
+
+  background-image: linear-gradient(var(--fc-sub), var(--fc-sub));
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+
+  transition: background-size 500ms;
+}
+
+.mention a:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+  color: var(--bg-main);
 }
