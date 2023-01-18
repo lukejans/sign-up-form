@@ -17,6 +17,8 @@ img {
   --g-3: rgb(63, 59, 80, 0.9);
   --g-4: rgba(155, 52, 18, 0.7);
 
+  --border: rgb(85, 85, 85);
+
   /* font colors */
   --fc-main: rgb(201, 197, 187);
   --fc-sub: rgb(138, 230, 175);
@@ -108,7 +110,8 @@ input {
 /* contains notification containers */
 .subs-ctrls {
   display: flex;
-  width: 300px;
+  justify-content: space-around;
+  width: 350px;
 }
 /* notification containers */
 .toggle {
@@ -119,7 +122,7 @@ input {
   flex-direction: column-reverse;
   align-items: center;
   cursor: pointer;
-  width: 200px;
+  width: 40px;
   height: 100px;
 }
 /* original checkbox*/
@@ -172,7 +175,7 @@ svg {
   width: 65px;
   padding: 15px;
   background-color: var(--bg-main);
-  border: 0.5px solid gray;
+  border: 0.5px solid var(--border);
   border-radius: 100%;
   position: absolute;
   top: -30px;
@@ -180,6 +183,8 @@ svg {
 .form-sec {
   padding: 5px;
   transform: scaleX(-1);
+  position: absolute;
+  left: 40.5%;
 }
 /* notification font */
 .toggle-fill + p,
@@ -203,7 +208,7 @@ svg {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border: 0.5px solid rgb(85, 85, 85);
+  border: 0.5px solid var(--border);
   border-radius: 0.5rem;
 }
 .background::before {
@@ -280,4 +285,20 @@ svg {
 .form-section {
   margin-top: 40px;
   padding-top: 40px;
+  align-items: flex-start;
+}
+.form-section input {
+  width: 100%;
+  height: 45px;
+  background-color: var(--bg-main);
+  border: 0.5px solid var(--border);
+  border-radius: 0.5rem;
+  color: white;
+  position: relative;
+  z-index: 10;
+  padding: 10px;
+
+  font-family: monospace, sans-serif;
+  font-size: 0.95rem;
+  font-weight: bold;
 }
