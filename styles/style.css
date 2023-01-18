@@ -231,6 +231,7 @@ svg {
 
 /* fill animation */
 .submit {
+  background-color: rgb(245, 245, 245);
   background-image: linear-gradient(var(--fc-sub), var(--fc-sub));
   background-repeat: no-repeat;
   background-size: 0% 100%;
@@ -239,6 +240,7 @@ svg {
   transition: background-size 500ms;
 }
 .reset {
+  background-color: rgb(245, 245, 245);
   background-image: linear-gradient(rgb(227, 85, 85), rgb(227, 85, 85));
   background-repeat: no-repeat;
   background-size: 0% 100%;
