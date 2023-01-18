@@ -43,6 +43,11 @@ var adjectives = [
   'worried',
   'cheerful',
   'greedy',
+  'perplexed',
+  'frothy',
+  'gritty',
+  'bored',
+  'intrigued',
 ];
 var animals = [
   'aardvark',
