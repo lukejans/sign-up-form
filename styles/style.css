@@ -228,7 +228,6 @@ svg {
   color: var(--bg-main);
   cursor: pointer;
 }
-
 /* fill animation */
 .submit {
   background-color: rgb(245, 245, 245);
@@ -248,7 +247,6 @@ svg {
 
   transition: background-size 500ms;
 }
-
 .submit:hover {
   background-size: 100% 100%;
   background-position-x: left;
@@ -268,7 +266,6 @@ svg {
 
   transition: background-size 500ms;
 }
-
 .mention a:hover {
   background-size: 100% 100%;
   background-position-x: left;
