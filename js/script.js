@@ -5,6 +5,7 @@
 var adjectives = [
   'adorable',
   'beautiful',
+  'busy',
   'clean',
   'dirty',
   'elegant',
@@ -13,7 +14,8 @@ var adjectives = [
   'handsome',
   'long',
   'magnificent',
-  'old fashioned',
+  'condescending',
+  'wise',
   'plain',
   'quaint',
   'sparkling',
@@ -39,6 +41,8 @@ var adjectives = [
   'thoughtless',
   'uptight',
   'worried',
+  'cheerful',
+  'greedy',
 ];
 var animals = [
   'aardvark',
@@ -83,15 +87,12 @@ var animals = [
   'fox',
   'frog',
   'gazelle',
-  'gila monster',
+  'brontosaurus',
   'giraffe',
   'gnu',
   'goat',
   'gopher',
   'gorilla',
-  'grizzly bear',
-  'ground hog',
-  'guinea pig',
   'hamster',
   'hedgehog',
   'hippopotamus',
@@ -119,12 +120,11 @@ var animals = [
   'mongoose',
   'monkey',
   'moose',
-  'mountain goat',
+  'dodo',
   'mouse',
   'mule',
   'muskrat',
   'mustang',
-  'mynah bird',
   'narwhal',
   'ocelot',
   'opossum',
@@ -139,7 +139,6 @@ var animals = [
   'polar bear',
   'porcupine',
   'porpoise',
-  'prairie dog',
   'puma',
   'rabbit',
   'raccoon',
@@ -152,7 +151,6 @@ var animals = [
   'seal',
   'sheep',
   'shrew',
-  'silver fox',
   'skunk',
   'sloth',
   'snake',
@@ -173,8 +171,16 @@ var animals = [
   'yak',
   'zebra',
 ];
+/* names can only be used once */
+let usedNames = [];
 function generateUsername() {
-  var adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
-  var animal = animals[Math.floor(Math.random() * animals.length)];
-  return `${adjective} ${animal}`;
+  let adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+  let animal = animals[Math.floor(Math.random() * animals.length)];
+  let username = `${adjective}_${animal}`;
+  if (usedNames.indexOf(username) === -1) {
+    usedNames.push(username);
+    return username;
+  } else {
+    return generateUsername();
+  }
 }
