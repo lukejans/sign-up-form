@@ -55,24 +55,17 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.mention,
+
 .form {
   min-width: 375px;
   padding: 15px;
   border: 0.25px solid gray;
 }
-.mention {
-  margin-top: 20px;
-  font-size: 0.9rem;
-  text-align: center;
-}
+
 .form {
   display: flex;
   flex-direction: column;
   margin: auto;
-}
-input {
-  margin-bottom: 20px;
 }
 /* images */
 .bartender {
@@ -80,7 +73,7 @@ input {
   transform: scaleX(-1);
 }
 /* typography */
-.mention,
+
 .form {
   color: white;
   background-color: var(--bg-main);
@@ -207,7 +200,7 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   border: 0.5px solid var(--border);
   border-radius: 0.5rem;
 }
@@ -265,27 +258,15 @@ svg {
   background-size: 100% 100%;
   background-position-x: left;
 }
-/* FILL HOVER ANIMATION */
-.mention a {
-  color: var(--fc-sub);
-
-  background-image: linear-gradient(var(--fc-sub), var(--fc-sub));
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  background-position-x: right;
-
-  transition: background-size 500ms;
-}
-.mention a:hover {
-  background-size: 100% 100%;
-  background-position-x: left;
-  color: var(--bg-main);
-}
 /* FORM SECTION */
 .form-section {
   margin-top: 40px;
   padding-top: 40px;
   align-items: flex-start;
+}
+.form-section,
+.subs-section {
+  width: 350px;
 }
 .form-section input {
   width: 100%;
