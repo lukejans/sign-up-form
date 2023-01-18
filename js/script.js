@@ -141,7 +141,6 @@ var animals = [
   'parrot',
   'pig',
   'platypus',
-  'polar bear',
   'porcupine',
   'porpoise',
   'puma',
