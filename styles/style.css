@@ -73,7 +73,6 @@ input {
   margin-bottom: 20px;
 }
 /* images */
-
 .bartender {
   width: 300px;
   transform: scaleX(-1);
@@ -101,9 +100,10 @@ input {
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
+
 /* SUBSCRIPTION SECTION */
 .subs-section {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 /* contains notification containers */
 .subs-ctrls {
@@ -167,6 +167,7 @@ svg {
 .toggle-input:checked ~ svg {
   fill: var(--fc-sub);
 }
+.form-sec,
 .bell {
   width: 65px;
   padding: 15px;
@@ -175,6 +176,10 @@ svg {
   border-radius: 100%;
   position: absolute;
   top: -30px;
+}
+.form-sec {
+  padding: 5px;
+  transform: scaleX(-1);
 }
 /* notification font */
 .toggle-fill + p,
@@ -270,4 +275,9 @@ svg {
   background-size: 100% 100%;
   background-position-x: left;
   color: var(--bg-main);
+}
+/* FORM SECTION */
+.form-section {
+  margin-top: 40px;
+  padding-top: 40px;
 }
