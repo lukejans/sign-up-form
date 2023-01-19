@@ -201,3 +201,17 @@ function setUsername() {
   document.getElementById('user').value = username;
 }
 setUsername();
+// SHOW / HIDE PASSWORD
+let passwordInput = document.getElementById('password');
+let showHideBtn = document.querySelector('.show-hide');
+let isHidden = true;
+
+showHideBtn.onclick = function () {
+  if (isHidden) {
+    passwordInput.type = 'text';
+    isHidden = false;
+  } else {
+    passwordInput.type = 'password';
+    isHidden = true;
+  }
+};
