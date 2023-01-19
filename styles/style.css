@@ -294,7 +294,7 @@ svg {
 }
 .show-hide {
   width: 42px;
-  height: 40px;
+  height: 38px;
   padding: 10px;
   background-color: var(--bg-main);
   border: none;
@@ -302,7 +302,7 @@ svg {
 
   position: absolute;
   left: 85%;
-  top: 27px;
+  top: 28px;
   z-index: 10;
 
   display: flex;
