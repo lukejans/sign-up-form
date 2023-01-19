@@ -319,11 +319,10 @@ svg {
   width: 33px;
   height: 33px;
   fill: var(--fc-alt);
-  border-radius: 75%;
 }
 .re-gen svg {
   transform-origin: center center;
-  transition: transform 0.2s ease-out, color 0.2s ease-out;
+  transition: transform 0.4s ease-out;
 }
 .re-gen:hover,
 .show-hide:hover {
