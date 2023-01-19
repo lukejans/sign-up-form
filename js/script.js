@@ -1,4 +1,4 @@
-// arrays to generate usernames
+// USERNAME ARRAYS
 // current possibilities: 5,412
 let adjectives = [
   'adorable',
@@ -201,11 +201,11 @@ function setUsername() {
   document.getElementById('user').value = username;
 }
 setUsername();
+
 // SHOW / HIDE PASSWORD
 let passwordInput = document.getElementById('password');
 let showHideBtn = document.querySelector('.show-hide');
 let isHidden = true;
-
 showHideBtn.onclick = function () {
   if (isHidden) {
     passwordInput.type = 'text';
