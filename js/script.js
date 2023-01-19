@@ -202,6 +202,25 @@ function setUsername() {
 }
 setUsername();
 
+// REGENERATE USERNAME
+let usernameInput = document.getElementById('user');
+let generateBtn = document.querySelector('.re-gen');
+let rotateIcon = document.querySelector('.spin');
+let isRotate = false;
+
+generateBtn.addEventListener('click', function () {
+  if (!isRotate) {
+    rotateIcon.style.transform = 'rotate(360deg)';
+    isRotate = true;
+  } else {
+    rotateIcon.style.transform = 'rotate(360deg)';
+    isRotate = false;
+  }
+  let newName = generateUsername();
+  usedNames[usedNames.length - 1] = newName;
+  usernameInput.value = newName;
+});
+
 // SHOW / HIDE PASSWORD
 let passwordInput = document.getElementById('password');
 let showHideBtn = document.querySelector('.show-hide');
