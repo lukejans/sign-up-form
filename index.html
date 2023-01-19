@@ -58,12 +58,12 @@
               </section>
 
               <label for="email">Email<sup class="req">*</sup></label>
-              <input type="email" id="email" name="email" /><br />
+              <input minlength="8" type="email" id="email" name="email" /><br />
 
               <section class="password-input">
                 <label for="password">Password<sup class="req">*</sup></label>
                 <input
-                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{12,30}$"
                   type="password"
                   id="password"
                   name="password" />
