@@ -309,11 +309,9 @@ svg {
 .show-hide svg {
   width: 33px;
   height: 33px;
+  fill: var(--fc-alt);
 }
 .show-hide:hover {
-  background-color: var(--fc-alt);
+  border: 0.5px solid white;
   cursor: pointer;
-}
-.show-hide:hover svg {
-  fill: var(--bg-main);
 }
