@@ -306,7 +306,7 @@ svg {
 
   position: absolute;
   left: 87%;
-  top: 34px;
+  top: 35px;
   z-index: 10;
 
   display: flex;
@@ -334,4 +334,7 @@ svg {
 .spin {
   transform-origin: center center;
   animation: my-animation 0.4s ease;
+}
+.req {
+  color: rgb(171, 171, 171);
 }
