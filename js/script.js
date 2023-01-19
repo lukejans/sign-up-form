@@ -1,8 +1,6 @@
-/* create a javascript function that generates a username using 
-  a random selection from an array of adjectives plus a random 
-  selection from an array of animals.
-  */
-var adjectives = [
+// arrays to generate usernames
+// current possibilities: 5,412
+let adjectives = [
   'adorable',
   'beautiful',
   'busy',
@@ -49,7 +47,7 @@ var adjectives = [
   'bored',
   'intrigued',
 ];
-var animals = [
+let animals = [
   'aardvark',
   'alligator',
   'alpaca',
@@ -175,16 +173,31 @@ var animals = [
   'yak',
   'zebra',
 ];
-/* names can only be used once */
+
+/* RANDOM USER VALUE FUNCTION
+    generates a user using a random selection from an array of 
+    adjectives plus a random selection from an array of animals. 
+    */
 let usedNames = [];
+// generates a value for the user and automatically assigns it
 function generateUsername() {
   let adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
   let animal = animals[Math.floor(Math.random() * animals.length)];
   let username = `${adjective}_${animal}`;
+  // checks if the user value is not present in the "usedNames" array.
   if (usedNames.indexOf(username) === -1) {
     usedNames.push(username);
     return username;
   } else {
+    if (usedNames.length == 5412) {
+      return;
+    }
     return generateUsername();
   }
 }
+// automatically set the generated username as the input value
+function setUsername() {
+  let username = generateUsername();
+  document.getElementById('user').value = username;
+}
+setUsername();
