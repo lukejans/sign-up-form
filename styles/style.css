@@ -186,6 +186,7 @@ svg {
 .subs {
   font-family: monospace, sans-serif;
   font-size: 1rem;
+  text-transform: uppercase;
 }
 .subs {
   padding: 25px 0 10px 0;
@@ -289,6 +290,9 @@ svg {
   font-size: 0.95rem;
   font-weight: bold;
 }
+.form-section label {
+  text-transform: uppercase;
+}
 .form {
   margin-bottom: 15px;
 }
@@ -365,6 +369,18 @@ li {
   margin: 5px;
   font-size: 0.65rem;
   color: rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+#display-valid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#display-valid svg {
+  width: 13px;
+  fill: var(--border);
 }
 #password {
   border-radius: 0.5rem 0.5rem 0 0;
