@@ -388,3 +388,7 @@ li {
 #password {
   border-radius: 0.5rem 0.5rem 0 0;
 }
+.signup {
+  width: 100%;
+  text-align: center;
+}
