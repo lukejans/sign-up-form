@@ -354,7 +354,7 @@ svg {
   border: 0.5px solid var(--border);
   border-top: none;
   border-radius: 0 0 0.5rem 0.5rem;
-  padding: 15px;
+  padding: 20px;
 }
 .message {
   max-width: 350px;
@@ -366,20 +366,23 @@ svg {
 }
 li {
   list-style: none;
-  margin: 5px;
   font-size: 0.65rem;
   color: rgb(210, 210, 210);
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 10px;
 }
-#display-valid {
+#display-valid1,
+#display-valid2,
+#display-valid3 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#display-valid svg {
-  width: 13px;
+#display-valid1 svg,
+#display-valid2 svg,
+#display-valid3 svg {
+  width: 15px;
   fill: var(--border);
 }
 #password {
